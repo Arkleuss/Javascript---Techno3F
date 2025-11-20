@@ -1,0 +1,352 @@
+/* ESTILOS GENERALES */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            background-image: url("https://www.infobae.com/new-resizer/s_6dt9xXTxmfrjXEwQszosrlycw=/arc-anglerfish-arc2-prod-infobae/public/Y4UTUY3KC5HXFJ77VXS3UIKZXU.jpg")    ;
+            background-size: cover;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+        
+        section {
+            padding: 80px 0;
+        }
+        
+        h1, h2, h3{
+            margin-bottom: 20px;
+            color: white;
+        }
+        
+        p, label {
+            color: white;
+            margin-bottom: 15px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn:hover {
+            background-color: #2980b9;
+            transform: translateY(-2px);
+        }
+        
+        /* HEADER */
+        header {
+            background-color: #6a497c;
+            color: white;
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 44px;
+            font-weight: bold;
+            font-family: "Oregano"
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 25px;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: #3498db;
+        }
+        
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+        }
+        
+        /* SECCIÓN PRINCIPAL */
+        #inicio {
+            
+            background: linear-gradient(rgba(88, 73, 124, 0.8), rgba(88, 73, 124, 0.9)), 
+                        url('https://via.placeholder.com/1920x1080') center/cover no-repeat;
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .hero-content h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: white;
+        }
+        
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+        
+        /* SECCIÓN API */
+        #api {
+            display: flex;
+            
+        }
+        #mazo-default {
+            border-radius: 20px;
+            max-height: 80%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        .api-container {
+            background-color: rgba(28, 41, 54, 0.8) ;
+            text-align: center;
+            flex-wrap: wrap;
+            margin-top: 1%;
+            min-width: 95vw;
+        }
+        
+        #apicontent {
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 80vw;
+            gap: auto  ;
+            
+        }
+        
+        .api-item {
+            display: flex;
+            border-radius: 10px;
+            padding: 20px;
+            transition: transform 0.3s;
+            gap: auto 
+        }
+        #img-carta {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-height: 80vh;
+            border-radius: 10px;
+        }
+        
+        .api-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .api-item img {
+            
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+        .btnApi {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            margin: 5px;
+            font-size: 2rem;
+        }
+        
+        .btn:hover {
+            background-color: #2980b9;
+            transform: translateY(-2px);
+            
+        }
+        
+        /* SECCIÓN FORMULARIO */
+        /*#formulario {
+            background-size: cover;
+            background-image: url("https://www.infobae.com/new-resizer/s_6dt9xXTxmfrjXEwQszosrlycw=/arc-anglerfish-arc2-prod-infobae/public/Y4UTUY3KC5HXFJ77VXS3UIKZXU.jpg");
+        }*/
+        .form-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: rgba(28, 41, 54, 0.8);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .form-group {
+            margin-bottom: 25px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+        
+        input, textarea, select {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+        
+        input:focus, textarea:focus, select:focus {
+            outline: none;
+            border-color: #3498db;
+        }
+        
+        .error {
+            color: #e74c3c;
+            font-size: 0.85rem;
+            margin-top: 5px;
+            display: none;
+        }
+        
+        .success-message {
+            background-color: #2ecc71;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+            text-align: center;
+            display: none;
+        }
+        
+        /* FOOTER */
+        footer {
+            background-color: #6a497c;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
+        
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            nav ul {
+                margin-top: 20px;
+                flex-direction: column;
+            }
+            
+            nav ul li {
+                margin: 10px 0;
+            }
+            
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+            
+            .menu-toggle {
+                display: block;
+                position: absolute;
+                top: 20px;
+                right: 20px;
+            }
+            
+            .nav-menu {
+                display: none;
+            }
+            
+            .nav-menu.active {
+                display: block;
+            }
+        }
+        
+        /* EJEMPLOS DE COLORES POR TEMÁTICA */
+        
+        /* TEMÁTICA VIAJES */
+        .viajes .btn,
+        .viajes header {
+            background-color: #e74c3c;
+        }
+        
+        .viajes .btn:hover {
+            background-color: #c0392b;
+        }
+        
+        /* TEMÁTICA RECETAS */
+        .recetas .btn,
+        .recetas header {
+            background-color: #27ae60;
+        }
+        
+        .recetas .btn:hover {
+            background-color: #219653;
+        }
+        
+        /* TEMÁTICA PELÍCULAS */
+        .peliculas .btn,
+        .peliculas header {
+            background-color: #9b59b6;
+        }
+        
+        .peliculas .btn:hover {
+            background-color: #8e44ad;
+        }
+        
+        /* TEMÁTICA VIDEOJUEGOS */
+        .videojuegos .btn,
+        .videojuegos header {
+            background-color: #3498db;
+        }
+        
+        .videojuegos .btn:hover {
+            background-color: #2980b9;
+        }
