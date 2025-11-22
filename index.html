@@ -41,16 +41,26 @@
     <!-- SECCIÓN API -->
     <section id="api">
         <div class="container api-container">
-            <h1>Tarot-API</h1>
-            <p>Concentrate en tu consulta y descubre lo que las cartas tienen para ti.</p>
-            <br>
-            <img id="mazo-default" src="https://s1.wordlebot.net/tarot/card-back.jpg" alt="Tarot API Logo">
+            <div class="api-text-tres" >
+                        <h1 class="api-text-tres-item">Pasado</h1>
+                        <h1 class="api-text-tres-item">Presente</h1>
+                        <h1 class="api-text-tres-item">Futuro</h1>
+            </div>
+            <div id="api-default">
+                <h1>Tarot-API</h1>
+                <p>Concentrate en tu consulta y descubre lo que las cartas tienen para ti.</p>
+                
+                <br>
+                <img id="mazo-default" src="https://s1.wordlebot.net/tarot/card-back.jpg" alt="Tarot API Logo">
+            </div>
+
             <div class="api-content" id="apiContent" >
                 <!-- Los datos de la API se cargarán aquí dinámicamente -->
                 <div class="api-item" style="display: none;">
                 </div>
             </div>
             <button id="obtener" class="btn" style="margin-top: 30px;">Sacar una Carta</button>
+            <button id="obtener3" class="btn" style="margin-top: 30px;">Sacar tres Carta</button>
         </div>
     </section>
 
@@ -59,13 +69,16 @@
         <div class="container">
             <div class="form-container">
                 <h2>Formulario de Contacto</h2>
-                <p>Completa el formulario para ponerte en contacto con nosotros.</p>
+                <p>Para una lectura completa y personalizada, completa el formulario y te contactamos</p>
                 
-                <form id="contactForm">
+                <form id="contactForm" 
+                        action="https://formspree.io/f/mdkjdpbk"
+                        method="POST"
+                        >
                     <div class="form-group">
                         <label for="nombre">Nombre completo</label>
                         <input type="text" id="nombre" name="nombre">
-                        <div class="error" id="errorNombre"></div>
+                        <div class="error" id="errorNombre"><p>a</p></div>
                     </div>
                     
                     <div class="form-group">
@@ -78,7 +91,7 @@
                         <label for="asunto">Asunto</label>
                         <select id="asunto" name="asunto">
                             <option value="">Selecciona un asunto</option>
-                            <option value="consulta">Consulta</option>
+                            <option value="consulta">Lectura</option>
                             <option value="sugerencia">Sugerencia</option>
                             <option value="problema">Reportar problema</option>
                         </select>
