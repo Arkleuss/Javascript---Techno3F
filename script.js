@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
             .then(response => response.json())
             .then(data => {
                 let card = data.cards;
-                // Seleccionar 3 índices únicos usando Set y card.length en lugar de 79
+                
                 const indices = new Set();
                 while (indices.size < 3) {
                     indices.add(Math.floor(Math.random() * card.length));

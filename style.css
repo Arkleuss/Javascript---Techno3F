@@ -230,6 +230,10 @@
             border-radius: 10px;
             transition: transform 0.3s;
         }
+        .btnApiImg:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(205, 120, 223, 0.8);
+        }
         .btnApi {
             position: relative;
             display: inline-block;
@@ -270,7 +274,7 @@
         .btnApi:hover, .btnApi:focus {
             background-color: #2980b9;
             transform: translateY(-2px);
-            
+            box-shadow: 0 4px 8px rgba(205, 120, 223, 0.8);
         }
         /* Mostrar al hover o focus (accesible con teclado) */
             .btnApi:hover::after,
